@@ -1,9 +1,9 @@
-ui:
-  image: hypriot/rpi-dockerui
-  restart: always
-  volumes:
-    - '/var/run/docker.sock:/var/run/docker.sock'
-  expose:
-    - 9000
-  ports:
-    - 80:9000
+version: '2'
+services:
+  docker-ui:
+    ports:
+     - "80:9000"
+    volumes:
+     - '/var/run/docker.sock:/var/run/docker.sock'
+    image: "hypriot/rpi-dockerui"
+    restart: always
