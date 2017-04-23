@@ -11,7 +11,7 @@
 ```
 
 ## Configure camera
-- Go to http://<IP>:80
+- Go to http://<<ip of tank cam>>:80
 - Go to Camera Settings
 - Set Resolutions: Max View 972p 4:3
 - Set Flip: both
